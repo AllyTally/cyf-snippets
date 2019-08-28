@@ -119,6 +119,7 @@ function string.ends_with(str, ending)
     return ending == "" or str:sub(-#ending) == ending
 end
 ```
+(by the way, apparently Moonsharp has string.endsWith already, so I'd recommend timing this function and that built in function and seeing which is better.)
 
 ### string.split by @RhenaudTheLukark and @WD200019
 ```lua
