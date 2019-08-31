@@ -218,3 +218,10 @@ startingy = 0 -- the y value we start at
 slope = math.tan(math.rad(angle in degrees)) -- or give a fraction like 0, 1, 1/2
 xintercept = ((1 / slope) * targety) - ((1 / slope) * startingy) -- this is the x position where y = targety
 ```
+
+### math.sign by @RhenaudTheLukark
+```lua
+function math.sign(number)
+    return number > 0 and 1 or number < 0 and -1 or 0
+end
+```
